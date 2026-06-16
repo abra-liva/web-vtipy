@@ -37,7 +37,7 @@ web-vtipy/
    - Endpoint: `https://api.anthropic.com/v1/messages`
    - Model: `claude-sonnet-4-6`
    - Max tokens: 1000
-   - Prompt požaduje krátký, vtipný vtip v češtině
+   - **Prompt**: `Vymysli ONE krátký, vtipný vtip na téma "${topic}". Max 2-3 věty. Bez vysvětlení, jen samotný vtip. Česky.`
    - API klíč se posílá v headeru `x-api-key`
 
 3. **UX**:
@@ -55,10 +55,17 @@ web-vtipy/
 
 ## 🚀 Jak spustit
 
-1. Otevřete `index.html` v prohlížeči (nebo ho pushnete na GitHub Pages)
+### Lokálně
+1. Otevřete `index.html` v prohlížeči (File → Open)
 2. Zadejte téma vtipu (např. "programátoři", "kočky", "pondělky")
 3. Vložte svůj Anthropic API klíč (`sk-ant-...`)
 4. Klikněte "Vygenerovat vtip ✨"
+
+### Na GitHub Pages (live verze)
+1. V GitHub repozitáři: Settings → Pages
+2. Source: nastavte na **master** branch
+3. Aplikace bude dostupná na: https://abra-liva.github.io/web-vtipy/
+4. Funkce je identická – stejný postup výše
 
 ## 🔄 Úpravy a vývoj
 
@@ -86,6 +93,8 @@ Zde jsou pokyny pro práci s Claude Code:
 
 ---
 
+**Status**: ✅ Live na GitHub Pages  
+**Repository**: https://github.com/abra-liva/web-vtipy  
 **Poslední aktualizace**: 2026-06-16  
 **Jazyk**: Čeština  
 **Licenze**: (doplnit dle vašeho přání)
